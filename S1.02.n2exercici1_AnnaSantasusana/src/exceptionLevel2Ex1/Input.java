@@ -18,9 +18,8 @@ public class Input {
 				correctValue = true;
 			} catch (InputMismatchException e){
 				System.out.println("Format error! Invalid value.");
-				input.next();
-				correctValue = false;
 			}
+			input.nextLine(); // per netejar el buffer
 		} while (!correctValue);
 		
 		return inputByte;
@@ -39,9 +38,8 @@ public class Input {
 				correctValue = true;
 			} catch (InputMismatchException e){
 				System.out.println("Format error! Invalid value.");
-				input.next();
-				correctValue = false;
 			}
+			input.nextLine();
 		} while (!correctValue);
 		
 		return inputInt;
@@ -60,9 +58,8 @@ public class Input {
 				correctValue = true;
 			} catch (InputMismatchException e){
 				System.out.println("Format error! Invalid value.");
-				input.next();
-				correctValue = false;
 			}
+			input.nextLine();
 		} while (!correctValue);
 	
 	return inputFloat;
@@ -82,9 +79,8 @@ public class Input {
 				correctValue = true;
 			} catch (InputMismatchException e){
 				System.out.println("Format error! Invalid value.");
-				input.next();
-				correctValue = false;
 			}
+			input.nextLine();
 		} while (!correctValue);
 	
 	return inputDouble;
@@ -108,8 +104,8 @@ public class Input {
 				}
 			} catch (Exception e){
 				System.out.println("Format error! Invalid value.");
-				correctValue = false;
 			}
+			input.nextLine();
 		} while (!correctValue);
 	
 	inputChar = inputString.charAt(0);
@@ -134,8 +130,8 @@ public class Input {
 				}
 			} catch (Exception e){
 				System.out.println("Format error! Invalid value.");
-				correctValue = false;
 			}
+			input.nextLine();
 		} while (!correctValue);
 	
 	return inputString;
@@ -165,8 +161,8 @@ public class Input {
 				}
 			} catch (Exception e){
 				System.out.println("Format error! Invalid value.");
-				correctValue = false;
 			}
+			input.nextLine();
 		} while (!correctValue);
 	
 	return answer;
